@@ -1,0 +1,443 @@
+{
+    "name": "Sunshine NFT",
+    "symbol": "SNFT",
+    "description": "Sunshine NFT",
+    "seller_fee_basis_points": 15,
+    "image": "https://arweave.net/XR7I64jrxGkEtDpxRJHY1phasMdlgXsh_xNSwWK1c2I",
+    "animation_url": null,
+    "external_url": null,
+    "attributes": [],
+    "collection": {
+        "name": "Sunshine Collection",
+        "family": "SolShine"
+    },
+    "properties": {
+        "files": [
+            {
+                "uri": "https://arweave.net/XR7I64jrxGkEtDpxRJHY1phasMdlgXsh_xNSwWK1c2I",
+                "type": "image/jpg"
+            }
+        ],
+        "category": "video",
+        "creators": []
+    }
+}
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: invalid account data for instruction",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                InvalidAccountData,
+                            ),
+                        ),
+                        logs: Some(
+                            [
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+                "Program log: Instruction: Approve Use Authority",
+                "Program log: Error: InvalidAccountData",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 6527 of 200000 compute units",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: invalid account data for instruction",
+            ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+        },
+                ),
+    },
+        ),
+},
+)
+
+{
+    "NftMetadata": {
+        "name": "Composability NFT",
+        "symbol": "COMP",
+        "description": "Composability NFT",
+        "seller_fee_basis_points": 215,
+        "image": "/home/amir/code/rust/moon/image.png",
+        "attributes": [],
+        "properties": {
+            "files": [
+                {
+                    "uri": "/home/amir/code/rust/moon/image.png",
+                    "type": "image/png"
+                }
+            ],
+            "category": "image",
+            "creators": [
+                {
+                    "address": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                    "verified": false,
+                    "share": 100
+                }
+            ]
+        }
+    }
+}
+
+{
+    "NftMetadata": {
+        "name": "Composability NFT",
+        "symbol": "COMP",
+        "description": "Composability NFT",
+        "seller_fee_basis_points": 215,
+        "image": "/home/amir/code/rust/moon/image.png",
+        "attributes": [],
+        "properties": {
+            "files": [
+                {
+                    "uri": "/home/amir/code/rust/moon/image.png",
+                    "type": "image/png"
+                }
+            ],
+            "category": "image",
+            "creators": [
+                {
+                    "address": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                    "verified": true,
+                    "share": 100
+                }
+            ]
+        }
+    }
+}
+
+{
+    "args": {},
+    "data": {
+        "records": [
+            {
+                "fields": {
+                    "Url": "https://google.com"
+                }
+            },
+            {
+                "fields": {
+                    "Url": "https://aol1.com"
+                }
+            }
+        ]
+    },
+    "files": {},
+    "form": {},
+    "headers": {
+        "x-forwarded-proto": "https",
+        "x-forwarded-port": "443",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-623f47f0-30936d587cb8814f08d52b29",
+        "content-length": "91",
+        "content-type": "application/json",
+        "authorization": "Bearer keynH6Eh9ZN1Y2oqw",
+        "accept": "*/*"
+    },
+    "json": {
+        "records": [
+            {
+                "fields": {
+                    "Url": "https://google.com"
+                }
+            },
+            {
+                "fields": {
+                    "Url": "https://aol1.com"
+                }
+            }
+        ]
+    },
+    "url": "https://postman-echo.com/post"
+}
+
+{
+    "name": "Composability NFT",
+    "symbol": "COMP",
+    "description": "Composability NFT",
+    "seller_fee_basis_points": 215,
+    "image": "/home/amir/code/rust/moon/image.png",
+    "animation_url": null,
+    "external_url": null,
+    "attributes": [],
+    "collection": null,
+    "properties": {
+        "files": [
+            {
+                "uri": "/home/amir/code/rust/moon/image.png",
+                "type": "image/png"
+            }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                "verified": true,
+                "share": 100
+            }
+        ]
+    }
+}
+
+Time elapsed 1s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x2d",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    45,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+                "Program log: Instruction: Create Metadata Accounts v2",
+                "Program log: Transfer 5616720 lamports to the new account",
+                "Program 11111111111111111111111111111111 invoke [2]",
+                "Program 11111111111111111111111111111111 success",
+                "Program log: Allocate space for the account",
+                "Program 11111111111111111111111111111111 invoke [2]",
+                "Program 11111111111111111111111111111111 success",
+                "Program log: Assign the account to the owning program",
+                "Program 11111111111111111111111111111111 invoke [2]",
+                "Program 11111111111111111111111111111111 success",
+                "Program log: Share total must equal 100 for creator array",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 24973 of 200000 compute units",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x2d",
+            ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+        },
+                ),
+    },
+        ),
+},
+)
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x52",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    82,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+                "Program log: Instruction: Verify Collection",
+                "Program log: Collection Must Be a Unique Master Edition v2",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 9929 of 200000 compute units",
+                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x52",
+            ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+        },
+                ),
+    },
+        ),
+},
+)
+},
+)
+
+Cs1xU4tMgaEjPbh2axSNqUFApaNF14atVArKgqiu4Hu
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x52",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    82,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "Program log: Instruction: Verify Collection",
+            "Program log: Collection Must Be a Unique Master Edition v2",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 9929 of 200000 compute units",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x52",
+        ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+    },
+                ),
+},
+        ),
+},
+)
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x52",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    82,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "Program log: Instruction: Verify Collection",
+            "Program log: Collection Must Be a Unique Master Edition v2",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 9929 of 200000 compute units",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x52",
+        ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+    },
+                ),
+},
+        ),
+},
+)
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x1b",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    27,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "Program log: Instruction: Verify Collection",
+            "Program log: Derived key invalid",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 16133 of 200000 compute units",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x1b",
+        ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+    },
+                ),
+},
+        ),
+},
+)
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x52",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    82,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+            "Program log: Instruction: Verify Collection",
+            "Program log: Collection Must Be a Unique Master Edition v2",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 9677 of 200000 compute units",
+            "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x52",
+        ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+    },
+                ),
+},
+        ),
+},
+)
+
+

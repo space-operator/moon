@@ -1,0 +1,449 @@
+/*
+Re
+*/
+/*
+{
+    "Const": {
+        "String": "hello"
+    }
+}
+*//*
+{
+    "Const": {
+        "String": "beach soldier piano click essay sock stable cover angle wear aunt advice"
+    }
+}
+{
+    "Const": {
+        "String": "quote elite test avoid labor dolphin model burden word pottery cabbage evoke"
+    }
+}
+{
+    "Const": {
+        "String": "afford happy pledge oven goddess during celery trouble outside walk mind tip"
+    }
+}
+{
+    "Const": {
+        "String": "where tonight fat sting evidence forest peasant verify power depart banana begin"
+    }
+}
+
+{
+    "Const": {
+        "Bool": true
+    }
+}
+
+{
+    "Const": "Empty"
+}
+{
+    "Const": {
+        "U64": 500
+    }
+}
+
+{
+    "Const": {
+        "String": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NmVjMTNhOS03NTYyLTRiZjMtODgzOS00ZjVlY2YxOTFmMDYiLCJlbWFpbCI6ImVuem90YXIzMDAwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2V9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJiYWNkZGI0MTFiZDQ1ZGQzYTUzMSIsInNjb3BlZEtleVNlY3JldCI6IjE5ZGFhMzczY2Q0NTM3YjRjNzg3NDJjOWRkNGI3NTU1MGI4OWNmZDY5YTQ5YjhjNDkxYTc0NDkzM2M4NTY4MGIiLCJpYXQiOjE2NDQ5NTQ0ODl9.9AUY-lYSMpWSS7IQcnkv52J_MYiPDhagWbUT2rv7yTk"
+    }
+}
+{
+    "Const": {
+        "String": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NmVjMTNhOS03NTYyLTRiZjMtODgzOS00ZjVlY2YxOTFmMDYiLCJlbWFpbCI6ImVuem90YXIzMDAwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2V9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiJiYWNkZGI0MTFiZDQ1ZGQzYTUzMSIsInNjb3BlZEtleVNlY3JldCI6IjE5ZGFhMzczY2Q0NTM3YjRjNzg3NDJjOWRkNGI3NTU1MGI4OWNmZDY5YTQ5YjhjNDkxYTc0NDkzM2M4NTY4MGIiLCJpYXQiOjE2NDQ5NTQ0ODl9.9AUY-lYSMpWSS7IQcnkv52J_MYiPDhagWbUT2rv7yTk"
+    }
+}
+
+
+
+{
+    "Const": {
+        "String": "https://api.pinata.cloud"
+    }
+}
+{
+    "Const": {
+        "String": "image.jpg"
+    }
+}
+}
+{
+    "Const": {
+        "String": "2jQk5rnXUEqM9DBkGpmo1jAkXrTgQAkKNKTmGQyW4fRgao3PHMfqqX7bGmpRvW6ba8UHU2td9w8S5Sib3ikTQPZy"
+    }
+}
+
+
+Decimals
+{
+    "Const": {
+        "U8": 2
+    }
+}
+
+for NFT
+{
+    "Const": {
+        "U8": 0
+    }
+}
+
+{
+    "Const": {
+        "U16": 4200
+    }
+}
+
+
+
+
+Float
+{
+    "Const": {
+        "F64": 2000.0
+    }
+}
+{
+    "Const": {
+        "F32": 3.0
+    }
+}
+
+
+
+BOOL
+
+{
+    "Const": {
+        "Bool": true
+    }
+}
+
+{
+    "Const": {
+        "Bool": false
+    }
+}
+
+{
+    "Const": {
+        "String": "testing payment"
+    }
+}
+
+{
+    "Const": {
+        "String": "Axis NFT"
+    }
+}
+{
+    "Const": {
+        "String": "AXS"
+    }
+}
+
+{
+    "Const": {
+        "NftCreators": [
+            {
+                "address": "pubkey",
+                "verified": false,
+                "share": 5
+            }
+        ]
+    }
+}
+
+{
+    "Const": {
+        "String": "https://api.jsonbin.io/b/61ddc9072675917a628edc21"
+    }
+}
+
+{
+    "Const": {
+        "Uses": {
+            "use_method": "Burn",
+            "remaining": 3,
+            "total": 5
+        }
+    }
+}
+
+
+{
+    "Const": {
+        "String": "https://api.pinata.cloud"
+    }
+}
+
+{
+    "Const": {
+        "String": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NmVjMTNhOS03NTYyLTRiZjMtODgzOS00ZjVlY2YxOTFmMDYiLCJlbWFpbCI6ImVuem90YXIzMDAwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2V9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiIwMzg3MDRkZDg5ZjcwMzU2Njk3YSIsInNjb3BlZEtleVNlY3JldCI6ImFiZjkzOGJhODg3ZmQ4OGM2MDNjYWMxMDExMzYzMzA4NDhjMzBjMDFiNGM0MmJlMTllYzRjOGQyNmEyYTAwZmUiLCJpYXQiOjE2NDY1MDYzODh9.4iYBqsIhvEL5vjDI1I3SKJcfzQh6CwliwLMON4Mjoow"
+    }
+}
+
+
+{
+    "String:"2jQk5rnXUEqM9DBkGpmo1jAkXrTgQAkKNKTmGQyW4fRgao3PHMfqqX7bGmpRvW6ba8UHU2td9w8S5Sib3ikTQPZy"
+}
+
+
+
+{
+  "Const": {
+    "NftMetadata": {
+      "name": "Sunshine NFT",
+      "symbol": "SNFT",
+      "description": "Sunshine NFT",
+      "seller_fee_basis_points": 215,
+      "image": "image.jpg",
+      "attributes": [],
+      "properties": {
+        "files": [
+          {
+            "uri": "image.jpg",
+            "type": "image/jpg"
+          }
+        ],
+        "category": "image",
+        "creators": [
+            {
+                "address": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                "verified": true,
+                "share": 100
+            }
+        ]
+      }
+    }
+  }
+}
+
+API Key: 038704dd89f70356697a
+ API Secret: abf938ba887fd88c603cac101136330848c30c01b4c42be19ec4c8d26a2a00fe
+ JWT: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI1NmVjMTNhOS03NTYyLTRiZjMtODgzOS00ZjVlY2YxOTFmMDYiLCJlbWFpbCI6ImVuem90YXIzMDAwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwaW5fcG9saWN5Ijp7InJlZ2lvbnMiOlt7ImlkIjoiTllDMSIsImRlc2lyZWRSZXBsaWNhdGlvbkNvdW50IjoxfV0sInZlcnNpb24iOjF9LCJtZmFfZW5hYmxlZCI6ZmFsc2V9LCJhdXRoZW50aWNhdGlvblR5cGUiOiJzY29wZWRLZXkiLCJzY29wZWRLZXlLZXkiOiIwMzg3MDRkZDg5ZjcwMzU2Njk3YSIsInNjb3BlZEtleVNlY3JldCI6ImFiZjkzOGJhODg3ZmQ4OGM2MDNjYWMxMDExMzYzMzA4NDhjMzBjMDFiNGM0MmJlMTllYzRjOGQyNmEyYTAwZmUiLCJpYXQiOjE2NDY1MDYzODh9.4iYBqsIhvEL5vjDI1I3SKJcfzQh6CwliwLMON4Mjoow
+
+
+https://cloudflare-ipfs.com/ipfs/QmerDUAN93Bmpi1MJCdRCvpbPHa46Aok8wqZWmrL6iUykL
+
+String(
+    "QmerDUAN93Bmpi1MJCdRCvpbPHa46Aok8wqZWmrL6iUykL",
+)
+
+
+
+NftMetadata(
+    NftMetadata {
+        name: "Sunshine NFT",
+        symbol: "SNFT",
+        description: "Sunshine NFT",
+        seller_fee_basis_points: 15,
+        image: "ipfs://QmYasLHeFsRRY51xbBo6JfA2HegBEXhM3WL85S3Xfixr5d",
+        animation_url: None,
+        external_url: None,
+        attributes: [],
+        collection: Some(
+            NftMetadataCollection {
+                name: "Sunshine Collection",
+                family: "SolShine",
+            },
+        ),
+        properties: NftMetadataProperties {
+            files: [
+                NftMetadataFile {
+                    uri: "ipfs://QmYasLHeFsRRY51xbBo6JfA2HegBEXhM3WL85S3Xfixr5d",
+                    kind: "image/jpg",
+                },
+            ],
+            category: Some(
+                "video",
+            ),
+            creators: [],
+        },
+    },
+)
+
+String(
+    "ipfs://QmVkWGbyXEKE49Y2vVuwASYPhBeB8n4zkv4PVHyzoPCKWn",
+)
+
+
+{
+    "Const": {
+        "String": "image.jpg"
+    }
+}
+
+{
+    "Const": {
+        "String": "/home/amir/code/rust/libraries/sunshine_flow/arweave-key-iI13Hg-83m6ZGlhc1ielZ6aprjWZB-RCxO7wH6c0_QQ.json"
+    }
+}
+
+hot wallet
+2jQk5rnXUEqM9DBkGpmo1jAkXrTgQAkKNKTmGQyW4fRgao3PHMfqqX7bGmpRvW6ba8UHU2td9w8S5Sib3ikTQPZy
+
+pubkey
+7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS
+
+Bundlr Endpoints
+
+
+Get Balance
+https://node1.bundlr.network/account/balance/solana?address=7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS
+returns: {"balance":"0"}
+
+Get Price
+https://node1.bundlr.network/price/solana/1000
+
+/price/${currency}/${bytes}
+returns: 1530
+
+Get Address to Fund,      * Queries the bundler to get it's address for a specific currency
+https://node1.bundlr.network/info
+{"version":"0.2.0","addresses":{"arweave":"OXcT1sVRSA5eGwt2k6Yuz8-3e3g9WJi5uSE99CWqsBs","ethereum":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","matic":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","bnb":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","avalanche":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","solana":"DHyDV2ZjN3rB6qNGXS48dP5onfbZd3fAEz6C5HJwSqRD","arbitrum":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","boba":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","chainlink":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","kyve":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","fantom":"0xb4DE0833771eae55040b698aF5eB06d59E142C82","algorand":"DL7ZTTQMTFNXRF3367OTSNAZ3L2X676OJ4GGB3DXMUJ37CCKJ5RJMEO6RI"},"gateway":"arweave.net"}
+
+
+bundlr fund 50000 -h https://devnet.bundlr.network -w 4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi -c solana
+
+ --provider-url https://api.devnet.solana.com
+
+Transaction simulation failed: Attempt to debit an account but found no record of a prior credit. 
+    
+Error whilst funding: failed to send transaction: Transaction simulation failed: Attempt to debit an account but found no record of a prior credit. 
+
+
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x25",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    37,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+                                "Program log: Instruction: Create Metadata Accounts v2",
+                                "Program log: Transfer 5616720 lamports to the new account",
+                                "Program 11111111111111111111111111111111 invoke [2]",
+                                "Program 11111111111111111111111111111111 success",
+                                "Program log: Allocate space for the account",
+                                "Program 11111111111111111111111111111111 invoke [2]",
+                                "Program 11111111111111111111111111111111 success",
+                                "Program log: Assign the account to the owning program",
+                                "Program 11111111111111111111111111111111 invoke [2]",
+                                "Program 11111111111111111111111111111111 success",
+                                "Program log: Creators must be at least one if set",
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 21317 of 200000 compute units",
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x25",
+                            ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+                    },
+                ),
+            },
+        ),
+    },
+)
+
+{
+    "Json": {
+        "name": "new_name",
+        "symbol": "new_symbol",
+        "metadata_uri": "this will be replaced",
+        "seller_fee_basis_points": 375
+    }
+}
+Time elapsed 0s 
+failed to run command: SolanaClient(
+    ClientError {
+        request: Some(
+            SendTransaction,
+        ),
+        kind: RpcError(
+            RpcResponseError {
+                code: -32002,
+                message: "Transaction simulation failed: Error processing Instruction 0: custom program error: 0x3b",
+                data: SendTransactionPreflightFailure(
+                    RpcSimulateTransactionResult {
+                        err: Some(
+                            InstructionError(
+                                0,
+                                Custom(
+                                    59,
+                                ),
+                            ),
+                        ),
+                        logs: Some(
+                            [
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s invoke [1]",
+                                "Program log: Instruction: Update Metadata Accounts v2",
+                                "Program log: Data is immutable",
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s consumed 6616 of 200000 compute units",
+                                "Program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s failed: custom program error: 0x3b",
+                            ],
+                        ),
+                        accounts: None,
+                        units_consumed: Some(
+                            0,
+                        ),
+                    },
+                ),
+            },
+        ),
+    },
+)
+
+NFT update_authority
+token pubkey
+5vWJwacqu2ufqt75LvAgQdbVNaSiE49XwJV1SXyfQ1mP
+
+
+old token pubkey
+FygtiEvjx4QBd4pMh1bK2ruRcXNqaU7YgxTmnWEFydZF
+gen keypair account pubkey
+Cmw5bCaQzuEgc1kAWFKqJQmDvoPmKi72mqyWgaQmxmni
+
+keypair
+4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi
+
+
+Utilize
+{
+    "Const": {
+        "Uses": {
+            "use_method": "Burn",
+            "remaining": 500,
+            "total": 500
+        }
+    }
+}
+
+Create Token => Create Mint Account
+Create Account => Create Token Account
+Transfer to Transfer Token
+
+
+
+
+7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS
+
+Json for JSON Extract
+{"args":{},"data":{"records":[{"fields":{"Url":"https://google.com"}},{"fields":{"Url":"https://aol1.com"}}]},"files":{},"form":{},"headers":{"x-forwarded-proto":"https","x-forwarded-port":"443","host":"postman-echo.com","x-amzn-trace-id":"Root=1-623764b3-7e778e7650871c9c17e16c6d","content-length":"91","content-type":"application/json","test":"Bearer keynH6Eh9ZN1Y2oqw","accept":"*/*"},"json":{"records":[{"fields":{"Url":"https://google.com"}},{"fields":{"Url":"https://aol1.com"}}]},"url":"https://postman-echo.com/post"}

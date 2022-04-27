@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "node_id": "c81c3c65-a619-11ec-8222-000000000000",
+      "properties": {
+        "CTX_MARKER": {
+          "solana_net": "Devnet",
+          "wallet_graph": "c81c1129-a619-11ec-8221-000000000000"
+        }
+      },
+      "outbound_edges": [],
+      "inbound_edges": [
+        {
+          "id": "c81c503f-a619-11ec-8223-000000000000",
+          "from": "c81bc3a9-a619-11ec-8220-000000000000",
+          "to": "c81c3c65-a619-11ec-8222-000000000000"
+        }
+      ]
+    },
+    {
+      "node_id": "c89dae45-a619-11ec-8224-000000000000",
+      "properties": {
+        "BLOCK_MARKER": true,
+        "COMMAND_NAME_MARKER": null,
+        "DIMENSIONS_MARKER": {
+          "height": 75,
+          "width": 300
+        },
+        "COORDS_MARKER": {
+          "x": 2431.6636811956173,
+          "y": 429.33631057118424
+        }
+      },
+      "outbound_edges": [
+        {
+          "id": "c89f6316-a619-11ec-8228-000000000000",
+          "from": "c89dae45-a619-11ec-8224-000000000000",
+          "to": "c89e655b-a619-11ec-8226-000000000000"
+        }
+      ],
+      "inbound_edges": [
+        {
+          "id": "c89dd634-a619-11ec-8225-000000000000",
+          "from": "c81bc3a9-a619-11ec-8220-000000000000",
+          "to": "c89dae45-a619-11ec-8224-000000000000"
+        }
+      ]
+    },
+    {
+      "node_id": "c89e655b-a619-11ec-8226-000000000000",
+      "properties": {
+        "TEXT_INPUT_MARKER": true,
+        "TEXT_MARKER": "",
+        "COMMAND_NAME_MARKER": null,
+        "DIMENSIONS_MARKER": {
+          "height": 70,
+          "width": 300
+        },
+        "COORDS_MARKER": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "outbound_edges": [],
+      "inbound_edges": [
+        {
+          "id": "c89e8c0b-a619-11ec-8227-000000000000",
+          "from": "c81bc3a9-a619-11ec-8220-000000000000",
+          "to": "c89e655b-a619-11ec-8226-000000000000"
+        },
+        {
+          "id": "c89f6316-a619-11ec-8228-000000000000",
+          "from": "c89dae45-a619-11ec-8224-000000000000",
+          "to": "c89e655b-a619-11ec-8226-000000000000"
+        }
+      ]
+    }
+  ],
+  "edges": {
+    "c89dd634-a619-11ec-8225-000000000000": {},
+    "c89f6316-a619-11ec-8228-000000000000": {
+      "BLOCK_TO_CMD_EDGE_MARKER": true
+    },
+    "c89e8c0b-a619-11ec-8227-000000000000": {},
+    "c81c503f-a619-11ec-8223-000000000000": {}
+  },
+  "state_id": 4
+}
