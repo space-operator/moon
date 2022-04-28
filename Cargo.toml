@@ -14,8 +14,6 @@ path = "rid_build.rs"
 [dependencies]
 derive_more = "0.99.17"
 cbindgen = "0.20.0"
-rid_build = { path = "../rid/rid-build" }
-rid = { path = "../rid" }
 reqwest = { version = "0.11", features = ["json"] }
 tokio = { version = "1", features = ["full"] }
 serde = { version = "1.0.130", features = ["derive"] }
@@ -23,29 +21,21 @@ serde_json = "1.0.68"
 uuid = { version = "0.8", features = ["v4"] }
 async-trait = "0.1.51"
 futures = "0.3"
-sunshine_indra = { path="../libraries/sunshine_flow/sunshine_indra", version = "0.1.0" }
-sunshine_core = { path="../libraries/sunshine_flow/sunshine_core", version = "0.1.0" }
-sunshine_solana = { path="../libraries/sunshine_flow/sunshine_solana", version = "0.1.0" }
 dashmap = "5.2.0"
 tiny-bip39 = "0.8.2"
 chrono = "0.4.19"
-# sunshine_dgraph = { path="../libraries/sunshine_dgraph", version = "0.1.0" }
 openssl = { version = "0.10", features = ["vendored"] }
 allo-isolate = "0.1.12"
 
+rid = { git = "ssh://git@github.com/space-operator/rid.git" }
+rid_build = { git = "ssh://git@github.com/space-operator/rid.git"}
 
-#[dependencies.solana-client]
-#git = "https://github.com/solana-labs/solana/"
-#rev = "2b0f16e7c378c14c8320b194d0963836343e52d2"
-# [dependencies.solana-remote-wallet]
-# version = "1.9.9"
-# default-features = false
+sunshine_indra = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
+sunshine_core = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
+sunshine_solana = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
 
-[dependencies.input-core]
-path = "../libraries/sunshine/input-core"
+input-core ={ git = "ssh://git@github.com/space-operator/sunshine.git" }
+input-more ={git = "ssh://git@github.com/space-operator/sunshine.git"}
 
-[dependencies.input-more]
-path = "../libraries/sunshine/input-more"
+parse ={git = "ssh://git@github.com/space-operator/sunshine.git"}
 
-[dependencies.parse]
-path = "../libraries/sunshine/parse"

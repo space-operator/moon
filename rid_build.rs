@@ -1,6 +1,4 @@
-use rid_build::{
-    build, BuildConfig, BuildTarget, FlutterConfig, FlutterPlatform, Project,
-};
+use rid_build::{build, BuildConfig, BuildTarget, FlutterConfig, FlutterPlatform, Project};
 use std::env;
 
 fn main() {
@@ -29,7 +27,8 @@ fn main() {
                 //FlutterPlatform::android(),
                 // Desktop
                 FlutterPlatform::macos(),
-                //FlutterPlatform::linux(),
+                FlutterPlatform::linux(),
+                FlutterPlatform::windows(),
             ],
         }),
         lib_name,

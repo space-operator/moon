@@ -20,7 +20,7 @@ void main() async {
 
   // MUST DO DEVICE TYPE CHECK AND UPDATE
   //final libraryDir =
-  await getLibraryDirectory(); // Unsupported on Android and Linux
+  // await getLibraryDirectory(); // Unsupported on Android and Linux
   //print(libraryDir);
   final tempDir = await getTemporaryDirectory();
   final persistentDir = await getApplicationSupportDirectory();

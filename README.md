@@ -1,15 +1,36 @@
-# moon
+# Space Operator - Project Moon
 
-Rust integrated Dart Flutter Project
 
 ## Getting Started
 
-Use the below scripts to get the app ready to run with Flutter.
+Use the below steps to build
+
+### 0. Setup Flutter
+
+
+flutter config
+```
+flutter config --enable-windows-desktop
+flutter config --enable-macos-desktop
+flutter config --enable-linux-desktop
+```
+
+generate device specific build files
+```
+flutter create .
+```
+
 
 ### 1. Generate Glue Code
 
+Windows and Linux
 ```sh
 ./sh/bindgen
+```
+
+macOS M1
+```sh
+./sh/bindgen-m1
 ```
 
 ### 2. Build For Desired Target/Device
@@ -17,17 +38,28 @@ Use the below scripts to get the app ready to run with Flutter.
 Run any of the below three to build the binary for the specific device and have it placed into
 the devices specific plugin folder.
 
+macOS
 ```sh
 ./sh/macos
 ```
+
+Windows & Linux
+Not required
 
 ### 3. Run with Flutter
 
 Run on the device.
 
+
 ```sh
-flutter run -d macos
+flutter devices (find the available device names)
+
+flutter run -d [device]
+
+e.g.
+flutter run -d windows
 ```
+
 
 ### 4. Develop
 
