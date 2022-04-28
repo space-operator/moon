@@ -15,7 +15,7 @@ flutter config --enable-macos-desktop
 flutter config --enable-linux-desktop
 ```
 
-generate device specific build files
+generate device specific build files (yes, just a dot after create)
 ```
 flutter create .
 ```
