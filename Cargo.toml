@@ -38,4 +38,3 @@ input-core ={ git = "ssh://git@github.com/space-operator/sunshine.git" }
 input-more ={git = "ssh://git@github.com/space-operator/sunshine.git"}
 
 parse ={git = "ssh://git@github.com/space-operator/sunshine.git"}
-

@@ -36,9 +36,39 @@ dependencies:
   # google_fonts: ^2.2.0
 
 dev_dependencies:
+  msix: ^3.4.1
   build_runner:
   flutter_test:
     sdk: flutter
+
+msix_config:
+  display_name: Space Operator
+  publisher_display_name: Space Operator
+  output_name: Space Operator
+  msix_version: 0.1.0.0
+  identity_name: 32550SpaceOperator.SpaceOperator
+  publisher: CN=8E936E84-309A-40E4-84AB-88ECAC494C59
+  languages: en-us
+  capabilities: "internetClient"
+  logo_path: C:\Users\amirb\rust\moon\macos\Runner\Assets.xcassets\AppIcon.appiconset\app_icon_512.png
+  trim_logo: false
+  certificate_path: C:\Users\amirb\Desktop\certificate\CERTIFICATE.pfx
+  certificate_password: SpaceFly
+  
+  
+# msix_config:
+#   display_name: Space Operator
+#   publisher_display_name: Space Operator
+#   output_name: Space Operator
+#   msix_version: 0.1.1.0
+#   identity_name: 32550SpaceOperator.SpaceOperator
+#   publisher: CN=8E936E84-309A-40E4-84AB-88ECAC494C59
+#   languages: en-us
+#   capabilities: "internetClient"
+#   logo_path: C:\Users\amirb\rust\moon\macos\Runner\Assets.xcassets\AppIcon.appiconset\app_icon_512.png
+#   trim_logo: false
+#   store: true
+
 
 flutter:
 
