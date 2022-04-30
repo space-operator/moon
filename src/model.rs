@@ -418,7 +418,7 @@ impl Model {
                 run_status.clone(),
                 req_id.clone(),
                 graph_id.clone(),
-                graph_entry,//TODO wrong, doesn't update
+                graph_entry, //TODO wrong, doesn't update
                 log_path,
             ),
             run_status,
@@ -760,9 +760,6 @@ impl Model {
 
             *graph_id_ref = graph_id
         }
-
-
-  
 
         self.bookmarks = HashMap::new();
         for node in graph.nodes.iter() {

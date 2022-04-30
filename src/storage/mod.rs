@@ -1,3 +1,7 @@
+// TODO: macro for simple module definition
+// TODO: wrappers for easy graph operation
+// TODO: we want to replicate the functionality in this project: https://heptabase.com/
+
 // MAYBE TODO: add auto-indexes for storage with Weak in storage and Arc in index
 // DECLINED: because too complex basic bahavior
 

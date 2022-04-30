@@ -29,6 +29,7 @@
         add click handler
     click on input_id
 */
+
 // mod workaround;
 mod api;
 mod command;
@@ -188,7 +189,6 @@ impl RidStore<Msg> for Store {
                 model.bookmarks.clear(); // FIXME: do this in new_graph and read_graph
                 if ev == "new" {
                     model.new_graph();
-                    
                 } else {
                     let graph_id = GraphId(Uuid::from_str(&ev).unwrap());
                     model.read_graph(graph_id);
@@ -1406,10 +1406,7 @@ impl Store {
             .model()
             .node_edges()
             .iter()
-            .filter(|(_, model)| {
-               selected_node_ids
-                    .contains(&model.from.0.to_string())
-            })
+            .filter(|(_, model)| selected_node_ids.contains(&model.from.0.to_string()))
             .map(|(_, model)| model.to.0.to_string())
             .collect();
 
@@ -1434,8 +1431,8 @@ impl Store {
 
         let state = self.state.as_ref().unwrap();
 
-           // move currently movable nodes
-           let (dx, dy) = if let UiState::NodeMove(start_coords, coords) = state.ui_state {
+        // move currently movable nodes
+        let (dx, dy) = if let UiState::NodeMove(start_coords, coords) = state.ui_state {
             let dx = coords.x - start_coords.x;
             let dy = coords.y - start_coords.y;
 

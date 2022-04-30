@@ -1858,6 +1858,14 @@ checksum = "20b2b533137b9cad970793453d4f921c2e91312a6d88b1085c07bc15fc51bb3b"
 [[package]]
 name = "input-core"
 version = "0.1.0"
+source = "git+ssh://git@github.com/space-operator/sunshine.git?rev=ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8#ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
+dependencies = [
+ "thiserror",
+]
+
+[[package]]
+name = "input-core"
+version = "0.1.0"
 source = "git+ssh://git@github.com/space-operator/sunshine.git#ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
 dependencies = [
  "thiserror",
@@ -1866,9 +1874,9 @@ dependencies = [
 [[package]]
 name = "input-more"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/sunshine.git#ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
+source = "git+ssh://git@github.com/space-operator/sunshine.git?rev=ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8#ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
 dependencies = [
- "input-core",
+ "input-core 0.1.0 (git+ssh://git@github.com/space-operator/sunshine.git?rev=ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8)",
 ]
 
 [[package]]
@@ -2225,7 +2233,7 @@ dependencies = [
  "dashmap 5.2.0",
  "derive_more",
  "futures",
- "input-core",
+ "input-core 0.1.0 (git+ssh://git@github.com/space-operator/sunshine.git?rev=ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8)",
  "input-more",
  "openssl",
  "parse",
@@ -2623,7 +2631,7 @@ name = "parse"
 version = "0.1.0"
 source = "git+ssh://git@github.com/space-operator/sunshine.git#ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
 dependencies = [
- "input-core",
+ "input-core 0.1.0 (git+ssh://git@github.com/space-operator/sunshine.git)",
  "nom",
  "pulldown-cmark",
  "regex 1.5.5",

@@ -34,8 +34,12 @@ sunshine_indra = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
 sunshine_core = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
 sunshine_solana = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
 
-input-core ={ git = "ssh://git@github.com/space-operator/sunshine.git" }
-input-more ={git = "ssh://git@github.com/space-operator/sunshine.git"}
+parse = {git = "ssh://git@github.com/space-operator/sunshine.git"}
 
-parse ={git = "ssh://git@github.com/space-operator/sunshine.git"}
+[dependencies.input-core]
+git = "ssh://git@github.com/space-operator/sunshine.git"
+rev = "ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
 
+[dependencies.input-more]
+git = "ssh://git@github.com/space-operator/sunshine.git"
+rev = "ae039d92d8ec88eba3258f70cea1c52dd8dcb4d8"
