@@ -19,6 +19,7 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin)
 
 # List of absolute paths to libraries that should be bundled with the plugin
 set(plugin_bundled_libraries
-  ""
+  "C:\\Users\\amirb\\rust\\moon\\target\\release\\moon.dll"
+  "C:\\Users\\amirb\\rust\\vcpkg\\packages\\openssl_x64-windows\\bin\\libcrypto-1_1-x64.dll"
   PARENT_SCOPE
 )

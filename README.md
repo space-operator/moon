@@ -5,6 +5,32 @@
 
 Use the below steps to build
 
+### Device specific
+
+#### Windows
+
+Install LLVM
+winget install -e --id LLVM.LLVM
+
+Need to figure out documentation for Cargo/Git permission denied
+https://stackoverflow.com/questions/2643502/git-how-to-solve-permission-denied-publickey-error-when-using-git
+https://www.samundra.com.np/solved-rust-project-fails-on-make-using-cargo/1869
+
+#### Linux
+Install libclangdev - sudo apt-get install libclang-dev
+
+#### Android
+use NDK version 22.1.7171670
+- export ANDROID_NDK_HOME="/home/amir/Android/Sdk/ndk/22.1.7171670" 
+- export PATH="$PATH:/home/amir/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/bin/"
+
+#### OpenSSL - might not be necessary after vendored feature in cargo.toml
+- https://www.howtoforge.com/tutorial/how-to-install-openssl-from-source-on-linux/
+- https://agryaznov.com/guides/2019/05/20/substrate-install.html#openssl
+- fix shared library
+    - export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib64
+- export OPENSSL_DIR="/usr/local/ssl"
+
 ### 0. Setup Flutter
 
 
@@ -15,7 +41,7 @@ flutter config --enable-macos-desktop
 flutter config --enable-linux-desktop
 ```
 
-generate device specific build files
+generate device specific build files (yes, just a dot after create)
 ```
 flutter create .
 ```
@@ -122,3 +148,14 @@ functionality currently provided by these scripts.
   `./plugin/lib/macos`, this is the same format as running `cargo build` on your Mac
 - `clean` cleans both the Flutter plugin and application, run this to reset Flutter when things
   aren't working
+  
+  
+
+
+### Release Mode
+Make sure to run cargo build in release mode
+
+Windows
+- run dumpbin to get dependent DLLs
+- C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\Hostx64\x86>dumpbin /dependents C:\Users\amirb\rust\moon\build\windows\runner\Release\moon.dll
+
