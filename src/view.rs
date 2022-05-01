@@ -234,6 +234,14 @@ impl CommandView for ArweaveFileUploadCommand {
     const VIEW_TYPE: NodeViewType = NodeViewType::ArweaveFileUpload;
 }
 
+impl CommandView for CreateAuctionHouseCommand {
+    const VIEW_TYPE: NodeViewType = NodeViewType::CreateAuctionHouse;
+}
+
+impl CommandView for AuctionHouseSellCommand {
+    const VIEW_TYPE: NodeViewType = NodeViewType::AuctionHouseSell;
+}
+
 // TODO: list all commands
 pub const VIEW_COMMANDS: &'static [&'static dyn DynCommandView] = &[
     &PrintCommand,
@@ -256,6 +264,8 @@ pub const VIEW_COMMANDS: &'static [&'static dyn DynCommandView] = &[
     &RequestAirdropCommand,
     &GetBalanceCommand,
     // NFTs
+    &CreateAuctionHouseCommand,
+    &AuctionHouseSellCommand,
     &CreateMetadataAccountsCommand,
     &CreateMasterEditionCommand,
     &UpdateMetadataAccountsCommand,
@@ -478,6 +488,8 @@ pub enum NodeViewType {
     RequestAirdrop,
     GetBalance,
     //
+    CreateAuctionHouse,
+    AuctionHouseSell,
     CreateMetadataAccounts,
     CreateMasterEdition,
     UpdateMetadataAccounts,

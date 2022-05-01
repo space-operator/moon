@@ -98,6 +98,8 @@ SuperBlock WidgetChooser(TreeNode treeNode,
     case "RequestAirdrop":
     case "GetBalance":
     //
+    case "CreateAuctionHouse":
+    case "AuctionHouseSell":
     case "CreateMetadataAccounts":
     case "CreateMasterEdition":
     case "UpdateMetadataAccounts":

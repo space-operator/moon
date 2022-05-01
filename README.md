@@ -159,3 +159,9 @@ Windows
 - run dumpbin to get dependent DLLs
 - C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\bin\Hostx64\x86>dumpbin /dependents C:\Users\amirb\rust\moon\build\windows\runner\Release\moon.dll
 
+
+
+### Troubleshooting
+Can't find Fe-Analyzer_Shared 
+dart pub add _fe_analyzer_shared
+

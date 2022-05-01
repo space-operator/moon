@@ -20,6 +20,8 @@ use sunshine_solana::commands::solana::nft::approve_collection_authority;
 use sunshine_solana::commands::solana::nft::approve_use_authority;
 use sunshine_solana::commands::solana::nft::arweave_file_upload;
 use sunshine_solana::commands::solana::nft::arweave_nft_upload;
+use sunshine_solana::commands::solana::nft::auction_house_sell;
+use sunshine_solana::commands::solana::nft::create_auction_house;
 use sunshine_solana::commands::solana::nft::create_master_edition;
 use sunshine_solana::commands::solana::nft::create_metadata_accounts;
 use sunshine_solana::commands::solana::nft::get_left_uses;
@@ -79,6 +81,8 @@ pub const COMMANDS: &'static [&'static dyn DynCommand] = &[
     &RequestAirdropCommand,
     &GetBalanceCommand,
     // NFTs
+    &CreateAuctionHouseCommand,
+    &AuctionHouseSellCommand,
     &CreateMetadataAccountsCommand,
     &CreateMasterEditionCommand,
     &UpdateMetadataAccountsCommand,
@@ -299,6 +303,11 @@ pub struct RequestAirdropCommand;
 pub struct GetBalanceCommand;
 
 // METAPLEX
+#[derive(Copy, Clone, Debug)]
+pub struct CreateAuctionHouseCommand;
+
+#[derive(Copy, Clone, Debug)]
+pub struct AuctionHouseSellCommand;
 
 #[derive(Copy, Clone, Debug)]
 pub struct CreateMetadataAccountsCommand;
@@ -1161,9 +1170,7 @@ impl Command for RequestAirdropCommand {
     const COMMAND_NAME: &'static str = "request_airdrop";
     const WIDGET_NAME: &'static str = "RequestAirdrop";
     const INPUTS: &'static [CommandInput] = &[
-        CommandInput::new("pubkey", &[PUBKEY], &true, "Airdrop recipient",
-        "",
-        &false,),
+        CommandInput::new("pubkey", &[PUBKEY], &true, "Airdrop recipient", "", &false),
         CommandInput::new(
             "amount",
             &[U64],
@@ -1909,6 +1916,152 @@ impl Command for ArweaveFileUploadCommand {
     const AVAILABILITY: &'static [SolanaNet] = &[SolanaNet::Devnet, SolanaNet::Mainnet];
 }
 
+// Creates a mint account for a custom token
+impl Command for CreateAuctionHouseCommand {
+    const COMMAND_NAME: &'static str = "create_auction_house";
+    const WIDGET_NAME: &'static str = "CreateAuctionHouse";
+    const INPUTS: &'static [CommandInput] = &[
+        CommandInput::new(
+            "treasury_mint_account",
+            &[PUBKEY],
+            &false,
+            "Treasury mint account, either native SOL mint or a SPL token mint.",
+            "",
+            &false,
+        ),
+        CommandInput::new(
+            "fee_payer",
+            &[KEYPAIR],
+            &true,
+            "Key paying SOL fees for setting up the Auction House",
+            "",
+            &false,
+        ), // Mint authority. Who can mint more tokens?
+        CommandInput::new(
+            "fee_withdrawal_destination",
+            &[PUBKEY],
+            &true,
+            "Account that pays for fees if the marketplace executes sales.",
+            "",
+            &false,
+        ), // Number of decimals a token can have. E.g. USD has 2 decimals. NFT should be 0.
+        CommandInput::new("auction_house_authority", &[PUBKEY], &true, "", "", &false), //
+        CommandInput::new(
+            "treasury_withdrawal_destination",
+            &[PUBKEY],
+            &true,
+            "SOL or SPL token account to receive Auction House fees. If treasury mint is native this will be the same as the `treasury_withdrawl_destination_owner`",
+            "",
+            &false,
+        ),
+        CommandInput::new(
+            "treasury_withdrawal_destination_owner",
+            &[PUBKEY],
+            &true,
+            "Owner of the `treasury_withdrawal_destination` account or the same address if the `treasury_mint` is native.",
+            "",
+            &false,
+        ),
+        CommandInput::new("seller_fee_basis_points", &[U16], &true, "", "", &false),
+        CommandInput::new("requires_sign_off", &[BOOL], &true, "", "", &false),
+        CommandInput::new("can_change_sale_price", &[BOOL], &true, "", "", &false),
+    ];
+    const OUTPUTS: &'static [CommandOutput] = &[
+        CommandOutput::new("signature", "String", &false, ""),
+        // passthrough
+        CommandOutput::new("fee_payer", "Keypair", &true, ""),
+        CommandOutput::new("treasury_withdrawal_destination", "Pubkey", &true, ""),
+        CommandOutput::new("auction_house_authority", "Pubkey", &true, ""),
+        CommandOutput::new("treasury_mint_account", "Pubkey", &true, ""),
+    ];
+    fn dimensions() -> NodeDimensions {
+        NodeDimensions {
+            height: calculate_node_height(Self),
+            width: 300,
+        }
+    }
+    fn config() -> CommandConfig {
+        CommandConfig::Solana(solana::Kind::Nft(nft::Command::CreateAuctionHouse(
+            create_auction_house::CreateAuctionHouse {
+                treasury_mint_account: None,
+                fee_payer: None,
+                fee_withdrawal_destination: None,
+                auction_house_authority: None,
+                treasury_withdrawal_destination: None,
+                treasury_withdrawal_destination_owner: None,
+                seller_fee_basis_points: None,
+                requires_sign_off: None,
+                can_change_sale_price: None,
+            },
+        )))
+    }
+
+    const DESCRIPTION: &'static str = "Creates an auction house";
+
+    const AVAILABILITY: &'static [SolanaNet] =
+        &[SolanaNet::Devnet, SolanaNet::Testnet, SolanaNet::Mainnet];
+}
+
+// Creates a mint account for a custom token
+impl Command for AuctionHouseSellCommand {
+    const COMMAND_NAME: &'static str = "auction_house_sell";
+    const WIDGET_NAME: &'static str = "AuctionHouseSell";
+    const INPUTS: &'static [CommandInput] = &[
+        CommandInput::new(
+            "treasury_mint_account",
+            &[PUBKEY],
+            &false,
+            "Treasury mint account, either native SOL mint or a SPL token mint.",
+            "",
+            &false,
+        ),
+        CommandInput::new(
+            "fee_payer",
+            &[KEYPAIR],
+            &true,
+            "Key paying SOL fees for setting up the Auction House",
+            "",
+            &false,
+        ), // Mint authority. Who can mint more tokens?
+        CommandInput::new("auction_house_authority", &[KEYPAIR], &true, "", "", &false), //
+        CommandInput::new("seller", &[KEYPAIR], &true, "", "", &false),
+        CommandInput::new("seller_token_account", &[PUBKEY], &true, "", "", &false),
+        CommandInput::new("seller_mint_account", &[PUBKEY], &true, "", "", &false),
+        CommandInput::new("sale_price", &[U64], &true, "", "", &false),
+    ];
+    const OUTPUTS: &'static [CommandOutput] = &[
+        CommandOutput::new("signature", "String", &false, ""),
+        // passthrough
+        CommandOutput::new("fee_payer", "Keypair", &true, ""),
+        CommandOutput::new("auction_house_authority", "Keypair", &true, ""),
+        CommandOutput::new("treasury_mint_account", "Pubkey", &true, ""),
+    ];
+    fn dimensions() -> NodeDimensions {
+        NodeDimensions {
+            height: calculate_node_height(Self),
+            width: 300,
+        }
+    }
+    fn config() -> CommandConfig {
+        CommandConfig::Solana(solana::Kind::Nft(nft::Command::AuctionHouseSell(
+            auction_house_sell::AuctionHouseSell {
+                treasury_mint_account: None,
+                fee_payer: None,
+                auction_house_authority: None,
+                seller: None,
+                seller_token_account: None,
+                seller_token_mint_account: None,
+                sale_price: None,
+            },
+        )))
+    }
+
+    const DESCRIPTION: &'static str = "Creates an auction house";
+
+    const AVAILABILITY: &'static [SolanaNet] =
+        &[SolanaNet::Devnet, SolanaNet::Testnet, SolanaNet::Mainnet];
+}
+
 const PRINTABLE: TypeBound = TypeBound {
     name: "Printable",
     types: &[
@@ -1924,6 +2077,8 @@ const PRINTABLE: TypeBound = TypeBound {
         "Metadata_Account",
         "Json",
         "U8",
+        "U16",
+        "U64",
     ],
 };
 
@@ -1942,6 +2097,8 @@ const ANY: TypeBound = TypeBound {
         "Metadata_Account",
         "Json",
         "U8",
+        "U16",
+        "U64",
     ],
 };
 
@@ -1969,6 +2126,12 @@ const U8: TypeBound = TypeBound {
     name: "u8",
     types: &["u8"],
 };
+
+const U16: TypeBound = TypeBound {
+    name: "u16",
+    types: &["u16"],
+};
+
 const U64: TypeBound = TypeBound {
     name: "u64",
     types: &["u64"],
