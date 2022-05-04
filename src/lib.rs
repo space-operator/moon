@@ -88,13 +88,16 @@ use input::{FlutterPointerEvent, MappingKind};
 use model::{NodeId, NodeModel};
 use state::*;
 
+// Struct that the Dart can read
+//
 #[rid::store]
 #[rid::structs(View, LastViewChanges)]
 #[derive(rid::Config)]
 pub struct Store {
-    #[rid(skip)]
+    #[rid(skip)] // make member unavailable on Dart side/ doesn't have to generate bindings
     state: Option<State>,
-    view: View,
+
+    view: View, //
     last_view_changes: LastViewChanges,
 }
 
@@ -116,6 +119,7 @@ const BOOKMARK_MARGIN_MULT: f64 = 0.25; // if 0 then no margin
 const ZOOM_IN_MULT: f64 = std::f64::consts::SQRT_2;
 const ZOOM_OUT_MULT: f64 = 1.0 / ZOOM_IN_MULT;
 
+// RID Library Dart <> Rust
 impl RidStore<Msg> for Store {
     fn create() -> Self {
         Self {
@@ -150,6 +154,7 @@ impl RidStore<Msg> for Store {
                 self.update_graph_list();
                 self.refresh_ui();
 
+                // Required by RID to complete message
                 rid::post(Confirm::Initialized(req_id, format!("{:?}", db_path,)));
             }
             Msg::ResizeCanvas(ev) => {
@@ -167,6 +172,8 @@ impl RidStore<Msg> for Store {
                 state.canvas.height = event.height;
                 rid::post(Confirm::ReceivedEvent(req_id, "".to_owned()));
             }
+
+            // handle input events
             Msg::MouseEvent(ev) => {
                 let state = self.state.as_mut().unwrap();
                 // dbg!(&ev);
@@ -183,6 +190,7 @@ impl RidStore<Msg> for Store {
                 //rid::post(Confirm::ReceivedEvent(req_id, format!("{:?}", ev)));
                 rid::post(Confirm::ReceivedEvent(req_id, "".to_owned()));
             }
+
             Msg::LoadGraph(ev) => {
                 let state = self.state.as_mut().unwrap();
                 let model = state.model_mut();
@@ -949,6 +957,7 @@ impl Store {
     }
 }
 
+// All the message available from Dart side
 #[rid::message(Confirm)]
 #[derive(Debug, Clone)]
 pub enum Msg {
@@ -990,6 +999,7 @@ pub enum Msg {
     DeleteGraph(String),
 }
 
+// Required Reply
 #[rid::reply]
 #[derive(Clone)]
 pub enum Confirm {
@@ -1046,8 +1056,8 @@ impl Store {
 
                 // CRUD
                 Event::CreateNode(coords) => {
-                    let node_id = state.model_mut().create_starting_node_block(coords);
-                    // println!("selected node {:?}", node_id);
+                    let node_id = state.model_mut().create_starting_node_block(coords); //block with textinput field
+                                                                                        // println!("selected node {:?}", node_id);
                     state.add_to_selection(node_id);
                     self.refresh_ui();
                     rid::post(Confirm::CreateNode(req_id))
@@ -1080,6 +1090,8 @@ impl Store {
                         }
                     }*/
                 }
+
+                //
 
                 // SELECTION RECTANGLE
                 Event::MaybeStartSelection(start) => {
@@ -1424,6 +1436,7 @@ impl Store {
         self.last_view_changes = changes;
     }
 
+    // only rebuild nodes and edges / e.g. translate a node
     fn refresh_nodes(&mut self, node_ids_to_update: HashSet<NodeId>) {
         // println!("refresh node");
 
@@ -1517,9 +1530,11 @@ impl Store {
                 },
             );
         }
+
         self.last_view_changes = changes;
     }
 
+    // rebuild model fully from DB
     fn refresh_ui(&mut self) {
         // println!("refresh ui");
         //let old_view = std::mem::take(&mut self.view);

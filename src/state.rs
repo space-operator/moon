@@ -15,10 +15,13 @@ use crate::model::{Model, NodeId};
 #[derive(Debug)]
 pub struct State {
     model: Model,
-    input: Input,
-    pub ui_state: UiState,
+    input: Input,          // implementation of the input state machine for Flutter
+    pub ui_state: UiState, //
+
     pub selected_node_ids: HashSet<NodeId>,
     pub active_node: Option<NodeId>,
+
+    // viewport manipulation
     pub transform: Transform,
     pub transform_screenshot: Transform,
     pub canvas: Canvas,
@@ -121,14 +124,14 @@ impl State {
     pub fn add_or_remove_from_selection(&mut self, node_id: NodeId) {
         if self.selected_node_ids.contains(&node_id) {
             self.selected_node_ids.remove(&node_id);
-            if self.active_node == Some(node_id) { //FIXME removes active node and panics
-                if self.selected_node_ids.clone().len()>0{
-
-                    self.active_node = self.selected_node_ids.clone().into_iter().next(); //fixme 
-                }else{
-                    self.active_node =None;
+            if self.active_node == Some(node_id) {
+                //FIXME removes active node and panics
+                if self.selected_node_ids.clone().len() > 0 {
+                    self.active_node = self.selected_node_ids.clone().into_iter().next();
+                //fixme
+                } else {
+                    self.active_node = None;
                 }
-
             }
             // dbg!(&self.selected_node_ids, self.active_node);
         } else {

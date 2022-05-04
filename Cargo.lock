@@ -3280,7 +3280,6 @@ dependencies = [
 [[package]]
 name = "rid"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 dependencies = [
  "rid_ffi",
  "rid_macro",
@@ -3289,7 +3288,6 @@ dependencies = [
 [[package]]
 name = "rid_build"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 dependencies = [
  "anyhow",
  "cbindgen",
@@ -3305,12 +3303,10 @@ dependencies = [
 [[package]]
 name = "rid_common"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 
 [[package]]
 name = "rid_ffi"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 dependencies = [
  "allo-isolate",
  "rid_common",
@@ -3319,7 +3315,6 @@ dependencies = [
 [[package]]
 name = "rid_macro"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 dependencies = [
  "proc-macro-error",
  "quote 1.0.18",
@@ -3330,7 +3325,6 @@ dependencies = [
 [[package]]
 name = "rid_macro_impl"
 version = "0.1.0"
-source = "git+ssh://git@github.com/space-operator/rid.git#adc35c9b6bf6f1d84dc3ee52227424580f0bf936"
 dependencies = [
  "heck",
  "proc-macro-error",

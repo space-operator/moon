@@ -27,8 +27,8 @@ chrono = "0.4.19"
 openssl = { version = "0.10", features = ["vendored"] }
 allo-isolate = "0.1.12"
 
-rid = { git = "ssh://git@github.com/space-operator/rid.git" }
-rid_build = { git = "ssh://git@github.com/space-operator/rid.git"}
+rid = { path = "../libraries/rid" }
+rid_build = { path = "../libraries/rid/rid-build"}
 
 sunshine_indra = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }
 sunshine_core = { git="ssh://git@github.com/space-operator/sunshine_flow.git" }

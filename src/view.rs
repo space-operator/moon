@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use crate::command::*;
 use crate::model::{GraphEntry, SolanaNet};
 
+// try to put everything that should be readable by Dart side here
 // #[derive(rid::Config)]
 #[rid::model]
 #[derive(Clone, Debug)]

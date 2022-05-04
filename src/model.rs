@@ -95,19 +95,29 @@ pub struct Db(Arc<DB>);
 
 #[derive(Debug)]
 pub struct Model {
-    db: Db,
+    db: Db, // indraDB implementation
     pub graph_list: Vec<GraphEntry>,
-    graph_id: Arc<Mutex<GraphId>>,
-    context_node_id: NodeId,
-    nodes: HashMap<NodeId, NodeModel>,
+    graph_id: Arc<Mutex<GraphId>>, // currently opened graph
+    context_node_id: NodeId,       // store the Solana context node
+
+    nodes: HashMap<NodeId, NodeModel>, // nodes of the graph
     node_edges: HashMap<NodeEdgeId, NodeEdgeModel>,
+
     flow_edges: HashMap<EdgeId, FlowEdgeModel>,
+
     inputs: HashMap<InputId, InputModel>,
     outputs: HashMap<OutputId, OutputModel>,
+
     pub bookmarks: HashMap<BookmarkId, BookmarkModel>,
+
+    // flow state
+    //
     flow_context: FlowContext,
+
     pub run_status: Arc<DashMap<NodeId, (RunState, Option<String>)>>,
-    pub req_id: Arc<Mutex<u64>>,
+
+    pub req_id: Arc<Mutex<u64>>, //workaround for UI to display command runtime status/errors
+
     pub solana_net: SolanaNet,
 }
 
@@ -733,6 +743,7 @@ impl Model {
         self.undeploy();
         self.run_status.clear();
 
+        // iterate through all graphs and find graph with specific name
         self.graph_list = block_on(self.db.0.execute(Action::Query(QueryKind::ListGraphs)))
             .unwrap()
             .into_node_list()
@@ -761,6 +772,7 @@ impl Model {
             *graph_id_ref = graph_id
         }
 
+        //
         self.bookmarks = HashMap::new();
         for node in graph.nodes.iter() {
             if let Some(bookmark_name) = node.properties.get(BOOKMARK_NAME) {

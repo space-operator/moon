@@ -1,0 +1,1982 @@
+{
+    "nodes": [
+        {
+            "node_id": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+            "properties": {
+                "kind": "Solana(\n    Nft(\n        CreateMetadataAccounts,\n    ),\n)",
+                "name": "create_metadata_accounts",
+                "original_node_id": "82db8289-cbce-11ec-8081-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "Nft": {
+                                "CreateMetadataAccounts": {
+                                    "collection_mint_account": null,
+                                    "creators": null,
+                                    "fee_payer": null,
+                                    "is_mutable": null,
+                                    "metadata": null,
+                                    "metadata_uri": null,
+                                    "mint_account": null,
+                                    "mint_authority": null,
+                                    "update_authority": null,
+                                    "uses": null
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "create_metadata_accounts",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 530,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc3f7d2-cbd0-11ec-8210-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc436cb-cbd0-11ec-8211-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc44e8d-cbd0-11ec-8212-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc46beb-cbd0-11ec-8213-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bb9d3a1-cbd0-11ec-81d7-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc5287b-cbd0-11ec-8218-000000000000",
+                    "from": "9bbc8461-cbd0-11ec-81e2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc56f38-cbd0-11ec-8219-000000000000",
+                    "from": "9bbcb55e-cbd0-11ec-81e4-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc5f1b9-cbd0-11ec-821c-000000000000",
+                    "from": "9bbd1024-cbd0-11ec-81e8-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc8989e-cbd0-11ec-8228-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc8aa0c-cbd0-11ec-8229-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca0449-cbd0-11ec-8235-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca14e4-cbd0-11ec-8236-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca3632-cbd0-11ec-8237-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca48b4-cbd0-11ec-8238-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bba1a3e-cbd0-11ec-81d8-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82dcfc3d-cbce-11ec-8085-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "String": "/NftMetadata/image"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 300,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"String\": \"/NftMetadata/image\"\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc4857a-cbd0-11ec-8214-000000000000",
+                    "from": "9bba1a3e-cbd0-11ec-81d8-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bba3131-cbd0-11ec-81d9-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bba1a3e-cbd0-11ec-81d8-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bba7811-cbd0-11ec-81da-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82ddea7f-cbce-11ec-8089-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "String": "/NftMetadata/properties/files/0/uri"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 300,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"String\": \"/NftMetadata/properties/files/0/uri\"\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc49fdc-cbd0-11ec-8215-000000000000",
+                    "from": "9bba7811-cbd0-11ec-81da-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbbc7a1-cbd0-11ec-81db-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bba7811-cbd0-11ec-81da-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbc0c3a-cbd0-11ec-81dc-000000000000",
+            "properties": {
+                "inputs": {
+                    "json": {
+                        "NftMetadata": {
+                            "animation_url": "",
+                            "attributes": [],
+                            "description": "Composability NFT",
+                            "external_url": "",
+                            "image": "add_image_path",
+                            "name": "Composability NFT",
+                            "properties": {
+                                "category": "image",
+                                "files": [
+                                    {
+                                        "type": "image/png",
+                                        "uri": "add_image_path"
+                                    }
+                                ]
+                            },
+                            "seller_fee_basis_points": 215,
+                            "symbol": "COMP"
+                        }
+                    },
+                    "path": {
+                        "String": "/NftMetadata/image"
+                    },
+                    "value": {
+                        "String": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png"
+                    }
+                },
+                "kind": "Simple(\n    JsonInsert,\n)",
+                "name": "json_insert",
+                "original_node_id": "82de8d8c-cbce-11ec-808d-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "JsonInsert": {
+                                "json": null,
+                                "path": null,
+                                "value": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "json_insert",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 180,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc4bbea-cbd0-11ec-8216-000000000000",
+                    "from": "9bbc0c3a-cbd0-11ec-81dc-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbc1bb9-cbd0-11ec-81dd-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                },
+                {
+                    "id": "9bc4857a-cbd0-11ec-8214-000000000000",
+                    "from": "9bba1a3e-cbd0-11ec-81d8-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                },
+                {
+                    "id": "9bc9dd4c-cbd0-11ec-8234-000000000000",
+                    "from": "9bc1fdd1-cbd0-11ec-8200-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                },
+                {
+                    "id": "9bca7f96-cbd0-11ec-823b-000000000000",
+                    "from": "9bc37ac1-cbd0-11ec-820c-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbc39e3-cbd0-11ec-81de-000000000000",
+            "properties": {
+                "inputs": {
+                    "json": {
+                        "NftMetadata": {
+                            "animation_url": "",
+                            "attributes": [],
+                            "description": "Composability NFT",
+                            "external_url": "",
+                            "image": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png",
+                            "name": "Composability NFT",
+                            "properties": {
+                                "category": "image",
+                                "files": [
+                                    {
+                                        "type": "image/png",
+                                        "uri": "add_image_path"
+                                    }
+                                ]
+                            },
+                            "seller_fee_basis_points": 215,
+                            "symbol": "COMP"
+                        }
+                    },
+                    "path": {
+                        "String": "/NftMetadata/properties/files/0/uri"
+                    },
+                    "value": {
+                        "String": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png"
+                    }
+                },
+                "kind": "Simple(\n    JsonInsert,\n)",
+                "name": "json_insert",
+                "original_node_id": "82df526c-cbce-11ec-8091-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "JsonInsert": {
+                                "json": null,
+                                "path": null,
+                                "value": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "json_insert",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 180,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc4e2f8-cbd0-11ec-8217-000000000000",
+                    "from": "9bbc39e3-cbd0-11ec-81de-000000000000",
+                    "to": "9bc2580b-cbd0-11ec-8202-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbc4a79-cbd0-11ec-81df-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                },
+                {
+                    "id": "9bc49fdc-cbd0-11ec-8215-000000000000",
+                    "from": "9bba7811-cbd0-11ec-81da-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                },
+                {
+                    "id": "9bc4bbea-cbd0-11ec-8216-000000000000",
+                    "from": "9bbc0c3a-cbd0-11ec-81dc-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                },
+                {
+                    "id": "9bca90fa-cbd0-11ec-823c-000000000000",
+                    "from": "9bc37ac1-cbd0-11ec-820c-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbc5f74-cbd0-11ec-81e0-000000000000",
+            "properties": {
+                "kind": "Simple(\n    Print,\n)",
+                "name": "print",
+                "original_node_id": "82e00378-cbce-11ec-8095-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": "Print"
+                    },
+                    "COMMAND_NAME_MARKER": "print",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 150,
+                        "width": 450
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [],
+            "inbound_edges": [
+                {
+                    "id": "9bbc6fb0-cbd0-11ec-81e1-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbc5f74-cbd0-11ec-81e0-000000000000"
+                },
+                {
+                    "id": "9bca6e72-cbd0-11ec-823a-000000000000",
+                    "from": "9bc300cf-cbd0-11ec-8208-000000000000",
+                    "to": "9bbc5f74-cbd0-11ec-81e0-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbc8461-cbd0-11ec-81e2-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e04c18-cbce-11ec-8097-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "bool_true",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "Bool": true
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 110,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"Bool\": true\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc5287b-cbd0-11ec-8218-000000000000",
+                    "from": "9bbc8461-cbd0-11ec-81e2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbc9d78-cbd0-11ec-81e3-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbc8461-cbd0-11ec-81e2-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbcb55e-cbd0-11ec-81e4-000000000000",
+            "properties": {
+                "inputs": {
+                    "json": {
+                        "NftCreators": [
+                            {
+                                "address": "pubkey",
+                                "share": 100,
+                                "verified": null
+                            }
+                        ]
+                    },
+                    "path": {
+                        "String": "/NftCreators/0/address"
+                    },
+                    "value": {
+                        "Pubkey": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS"
+                    }
+                },
+                "kind": "Simple(\n    JsonInsert,\n)",
+                "name": "json_insert",
+                "original_node_id": "82e0953d-cbce-11ec-8099-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "JsonInsert": {
+                                "json": null,
+                                "path": null,
+                                "value": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "json_insert",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 180,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc56f38-cbd0-11ec-8219-000000000000",
+                    "from": "9bbcb55e-cbd0-11ec-81e4-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc5aa9e-cbd0-11ec-821a-000000000000",
+                    "from": "9bbcb55e-cbd0-11ec-81e4-000000000000",
+                    "to": "9bc352e1-cbd0-11ec-820a-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbccece-cbd0-11ec-81e5-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                },
+                {
+                    "id": "9bc5c5da-cbd0-11ec-821b-000000000000",
+                    "from": "9bbce742-cbd0-11ec-81e6-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                },
+                {
+                    "id": "9bc69612-cbd0-11ec-821e-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                },
+                {
+                    "id": "9bca5b7a-cbd0-11ec-8239-000000000000",
+                    "from": "9bc2b401-cbd0-11ec-8206-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbce742-cbd0-11ec-81e6-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e1385e-cbce-11ec-809d-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "String": "/NftCreators/0/address"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 300,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"String\": \"/NftCreators/0/address\"\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc5c5da-cbd0-11ec-821b-000000000000",
+                    "from": "9bbce742-cbd0-11ec-81e6-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbcf4ea-cbd0-11ec-81e7-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbce742-cbd0-11ec-81e6-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbd1024-cbd0-11ec-81e8-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e1cd15-cbce-11ec-80a1-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "custom",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "Uses": {
+                                    "remaining": 500,
+                                    "total": 500,
+                                    "use_method": "Burn"
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 500,
+                        "width": 400
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"Uses\": {\n   \"use_method\": \"Burn\",\n   \"remaining\": 500,\n   \"total\": 500\n  }\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc5f1b9-cbd0-11ec-821c-000000000000",
+                    "from": "9bbd1024-cbd0-11ec-81e8-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbd1c32-cbd0-11ec-81e9-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbd1024-cbd0-11ec-81e8-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbd46af-cbd0-11ec-81ea-000000000000",
+            "properties": {
+                "inputs": {
+                    "private_key": {
+                        "String": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    }
+                },
+                "kind": "Solana(\n    GenerateKeypair,\n)",
+                "name": "generate_keypair",
+                "original_node_id": "82e29854-cbce-11ec-80a5-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "GenerateKeypair": {
+                                "passphrase": null,
+                                "private_key": "None",
+                                "save": "None",
+                                "seed_phrase": "None"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "generate_keypair",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 230,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc643d6-cbd0-11ec-821d-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bc2911c-cbd0-11ec-8204-000000000000"
+                },
+                {
+                    "id": "9bc69612-cbd0-11ec-821e-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                },
+                {
+                    "id": "9bc6b72e-cbd0-11ec-821f-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc6d2ab-cbd0-11ec-8220-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc6f4c8-cbd0-11ec-8221-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bc2580b-cbd0-11ec-8202-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbd563b-cbd0-11ec-81eb-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbd46af-cbd0-11ec-81ea-000000000000"
+                },
+                {
+                    "id": "9bc7996a-cbd0-11ec-8222-000000000000",
+                    "from": "9bbd8173-cbd0-11ec-81ec-000000000000",
+                    "to": "9bbd46af-cbd0-11ec-81ea-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbd8173-cbd0-11ec-81ec-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e34015-cbce-11ec-80a9-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "String": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 300,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"String\": \"4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi\"\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc7996a-cbd0-11ec-8222-000000000000",
+                    "from": "9bbd8173-cbd0-11ec-81ec-000000000000",
+                    "to": "9bbd46af-cbd0-11ec-81ea-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbd9184-cbd0-11ec-81ed-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbd8173-cbd0-11ec-81ec-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+            "properties": {
+                "kind": "Solana(\n    MintToken,\n)",
+                "name": "mint_token",
+                "original_node_id": "82e3e93c-cbce-11ec-80ad-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "MintToken": {
+                                "amount": null,
+                                "fee_payer": null,
+                                "mint_account": null,
+                                "mint_authority": null,
+                                "recipient": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "mint_token",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 280,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc7e98b-cbd0-11ec-8223-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc80447-cbd0-11ec-8224-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc83f73-cbd0-11ec-8225-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc8700a-cbd0-11ec-8226-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbe2165-cbd0-11ec-81ef-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc46beb-cbd0-11ec-8213-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc93c55-cbd0-11ec-822e-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc9547e-cbd0-11ec-822f-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc96c09-cbd0-11ec-8230-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc9bc2e-cbd0-11ec-8233-000000000000",
+                    "from": "9bc1a110-cbd0-11ec-81fe-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbea636-cbd0-11ec-81f0-000000000000",
+            "properties": {
+                "kind": "Solana(\n    Nft(\n        CreateMasterEdition,\n    ),\n)",
+                "name": "create_master_edition",
+                "original_node_id": "82e4a742-cbce-11ec-80b1-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "Nft": {
+                                "CreateMasterEdition": {
+                                    "fee_payer": null,
+                                    "max_supply": {
+                                        "Some": null
+                                    },
+                                    "mint_account": null,
+                                    "mint_authority": null,
+                                    "update_authority": null
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "create_master_edition",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 280,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc88675-cbd0-11ec-8227-000000000000",
+                    "from": "9bbea636-cbd0-11ec-81f0-000000000000",
+                    "to": "9bbfe59a-cbd0-11ec-81f6-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbec809-cbd0-11ec-81f1-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc7e98b-cbd0-11ec-8223-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc80447-cbd0-11ec-8224-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc83f73-cbd0-11ec-8225-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc8700a-cbd0-11ec-8226-000000000000",
+                    "from": "9bbdf03b-cbd0-11ec-81ee-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                },
+                {
+                    "id": "9bc9243f-cbd0-11ec-822d-000000000000",
+                    "from": "9bbfa0b9-cbd0-11ec-81f4-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbf3199-cbd0-11ec-81f2-000000000000",
+            "properties": {
+                "inputs": {
+                    "authority": {
+                        "Keypair": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    },
+                    "decimals": {
+                        "U8": 0
+                    },
+                    "fee_payer": {
+                        "Keypair": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    },
+                    "mint_account": {
+                        "Keypair": "2fqhzAx3s15VXEj1Hmg1usL2iHYp6aZbjvaGkqbWMwBq8cEtbyBaXwg2sFojHDKy1sn8dVjmZJaAmL5uHs2un9xN"
+                    }
+                },
+                "kind": "Solana(\n    CreateMintAccount,\n)",
+                "name": "create_mint_account",
+                "original_node_id": "82e55511-cbce-11ec-80b5-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "CreateMintAccount": {
+                                "authority": null,
+                                "decimals": null,
+                                "fee_payer": null,
+                                "memo": null,
+                                "mint_account": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "create_mint_account",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 280,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 16946
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc8989e-cbd0-11ec-8228-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc8aa0c-cbd0-11ec-8229-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bc8bbb7-cbd0-11ec-822a-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                },
+                {
+                    "id": "9bc8dddc-cbd0-11ec-822b-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                },
+                {
+                    "id": "9bc90ec8-cbd0-11ec-822c-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbf6232-cbd0-11ec-81f3-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc6b72e-cbd0-11ec-821f-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc6d2ab-cbd0-11ec-8220-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc99746-cbd0-11ec-8231-000000000000",
+                    "from": "9bc08317-cbd0-11ec-81fa-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                },
+                {
+                    "id": "9bc9a959-cbd0-11ec-8232-000000000000",
+                    "from": "9bc0a52b-cbd0-11ec-81fc-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbfa0b9-cbd0-11ec-81f4-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e633c6-cbce-11ec-80b9-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "u64",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "U64": 0
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 175,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"U64\": 0\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc9243f-cbd0-11ec-822d-000000000000",
+                    "from": "9bbfa0b9-cbd0-11ec-81f4-000000000000",
+                    "to": "9bbea636-cbd0-11ec-81f0-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bbfc988-cbd0-11ec-81f5-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbfa0b9-cbd0-11ec-81f4-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bbfe59a-cbd0-11ec-81f6-000000000000",
+            "properties": {
+                "kind": "Simple(\n    Print,\n)",
+                "name": "print",
+                "original_node_id": "82e6d3a3-cbce-11ec-80bd-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": "Print"
+                    },
+                    "COMMAND_NAME_MARKER": "print",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 150,
+                        "width": 450
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [],
+            "inbound_edges": [
+                {
+                    "id": "9bc00426-cbd0-11ec-81f7-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bbfe59a-cbd0-11ec-81f6-000000000000"
+                },
+                {
+                    "id": "9bc88675-cbd0-11ec-8227-000000000000",
+                    "from": "9bbea636-cbd0-11ec-81f0-000000000000",
+                    "to": "9bbfe59a-cbd0-11ec-81f6-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc0533a-cbd0-11ec-81f8-000000000000",
+            "properties": {
+                "inputs": {
+                    "fee_payer": {
+                        "Keypair": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    },
+                    "mint_account": {
+                        "Keypair": "2fqhzAx3s15VXEj1Hmg1usL2iHYp6aZbjvaGkqbWMwBq8cEtbyBaXwg2sFojHDKy1sn8dVjmZJaAmL5uHs2un9xN"
+                    },
+                    "owner": {
+                        "Keypair": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    }
+                },
+                "kind": "Solana(\n    CreateTokenAccount,\n)",
+                "name": "create_token_account",
+                "original_node_id": "82e7bec7-cbce-11ec-80c1-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "CreateTokenAccount": {
+                                "fee_payer": null,
+                                "mint_account": null,
+                                "owner": null,
+                                "token_account": null
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "create_token_account",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 280,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 16600
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc93c55-cbd0-11ec-822e-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc9547e-cbd0-11ec-822f-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                },
+                {
+                    "id": "9bc96c09-cbd0-11ec-8230-000000000000",
+                    "from": "9bc0533a-cbd0-11ec-81f8-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc062f0-cbd0-11ec-81f9-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                },
+                {
+                    "id": "9bc8bbb7-cbd0-11ec-822a-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                },
+                {
+                    "id": "9bc8dddc-cbd0-11ec-822b-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                },
+                {
+                    "id": "9bc90ec8-cbd0-11ec-822c-000000000000",
+                    "from": "9bbf3199-cbd0-11ec-81f2-000000000000",
+                    "to": "9bc0533a-cbd0-11ec-81f8-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc08317-cbd0-11ec-81fa-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Solana(\n    GenerateKeypair,\n)",
+                "name": "generate_keypair",
+                "original_node_id": "82e8c08a-cbce-11ec-80c5-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "GenerateKeypair": {
+                                "passphrase": null,
+                                "private_key": "None",
+                                "save": "None",
+                                "seed_phrase": "None"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "generate_keypair",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 230,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 218
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc99746-cbd0-11ec-8231-000000000000",
+                    "from": "9bc08317-cbd0-11ec-81fa-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc0904d-cbd0-11ec-81fb-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc08317-cbd0-11ec-81fa-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc0a52b-cbd0-11ec-81fc-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82e9ac21-cbce-11ec-80c9-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "u8",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "U8": 0
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 175,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"U8\": 0\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc9a959-cbd0-11ec-8232-000000000000",
+                    "from": "9bc0a52b-cbd0-11ec-81fc-000000000000",
+                    "to": "9bbf3199-cbd0-11ec-81f2-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc0b2d6-cbd0-11ec-81fd-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc0a52b-cbd0-11ec-81fc-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc1a110-cbd0-11ec-81fe-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82eac251-cbce-11ec-80cd-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "f64",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "F64": 1.0
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 175,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"F64\": 1.0\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc9bc2e-cbd0-11ec-8233-000000000000",
+                    "from": "9bc1a110-cbd0-11ec-81fe-000000000000",
+                    "to": "9bbdf03b-cbd0-11ec-81ee-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc1bd18-cbd0-11ec-81ff-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc1a110-cbd0-11ec-81fe-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc1fdd1-cbd0-11ec-8200-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82ebf559-cbce-11ec-80d3-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "custom",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "NftMetadata": {
+                                    "animation_url": "",
+                                    "attributes": [],
+                                    "description": "Composability NFT",
+                                    "external_url": "",
+                                    "image": "add_image_path",
+                                    "name": "Composability NFT",
+                                    "properties": {
+                                        "category": "image",
+                                        "files": [
+                                            {
+                                                "type": "image/png",
+                                                "uri": "add_image_path"
+                                            }
+                                        ]
+                                    },
+                                    "seller_fee_basis_points": 215,
+                                    "symbol": "COMP"
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 500,
+                        "width": 400
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"NftMetadata\": {\n   \"name\": \"Composability NFT\",\n   \"symbol\": \"COMP\",\n   \"description\": \"Composability NFT\",\n   \"seller_fee_basis_points\": 215,\n   \"image\": \"add_image_path\",\n   \"animation_url\": \"\",\n   \"external_url\": \"\",\n   \"attributes\": [],\n   \"properties\": {\n    \"files\": [\n     {\n      \"uri\": \"add_image_path\",\n      \"type\": \"image/png\"\n     }\n    ],\n    \"category\": \"image\"\n   }\n  }\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bc9dd4c-cbd0-11ec-8234-000000000000",
+                    "from": "9bc1fdd1-cbd0-11ec-8200-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc213b0-cbd0-11ec-8201-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc1fdd1-cbd0-11ec-8200-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc2580b-cbd0-11ec-8202-000000000000",
+            "properties": {
+                "inputs": {
+                    "fee_payer": {
+                        "Keypair": "4TmVkT4mh5xDcDGuFeb81GJdezhnEN7vNUhg5cLdPvBtsmWyt1qVkU5cN4U3Fffq4sAcbN6XXJomqgmNo6CjTNgi"
+                    },
+                    "metadata": {
+                        "NftMetadata": {
+                            "animation_url": "",
+                            "attributes": [],
+                            "description": "Composability NFT",
+                            "external_url": "",
+                            "image": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png",
+                            "name": "Composability NFT",
+                            "properties": {
+                                "category": "image",
+                                "files": [
+                                    {
+                                        "type": "image/png",
+                                        "uri": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png"
+                                    }
+                                ]
+                            },
+                            "seller_fee_basis_points": 215,
+                            "symbol": "COMP"
+                        }
+                    }
+                },
+                "kind": "Solana(\n    Nft(\n        ArweaveNftUpload,\n    ),\n)",
+                "name": "arweave_nft_upload",
+                "original_node_id": "82ecd497-cbce-11ec-80d7-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "Nft": {
+                                "ArweaveNftUpload": {
+                                    "fee_payer": null,
+                                    "fund_bundlr": null,
+                                    "metadata": null
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "arweave_nft_upload",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 180,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        18,
+                        "failed to run command: IoError(\n    Os {\n        code: 2,\n        kind: NotFound,\n        message: \"No such file or directory\",\n    },\n)"
+                    ]
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bca0449-cbd0-11ec-8235-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca14e4-cbd0-11ec-8236-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca3632-cbd0-11ec-8237-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                },
+                {
+                    "id": "9bca48b4-cbd0-11ec-8238-000000000000",
+                    "from": "9bc2580b-cbd0-11ec-8202-000000000000",
+                    "to": "9bb9b29a-cbd0-11ec-81d6-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc26f02-cbd0-11ec-8203-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc2580b-cbd0-11ec-8202-000000000000"
+                },
+                {
+                    "id": "9bc4e2f8-cbd0-11ec-8217-000000000000",
+                    "from": "9bbc39e3-cbd0-11ec-81de-000000000000",
+                    "to": "9bc2580b-cbd0-11ec-8202-000000000000"
+                },
+                {
+                    "id": "9bc6f4c8-cbd0-11ec-8221-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bc2580b-cbd0-11ec-8202-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc2911c-cbd0-11ec-8204-000000000000",
+            "properties": {
+                "__print_output": "pubkey&&&7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                "inputs": {
+                    "print": {
+                        "Pubkey": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS"
+                    }
+                },
+                "kind": "Simple(\n    Print,\n)",
+                "name": "print",
+                "original_node_id": "82edbdd3-cbce-11ec-80db-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": "Print"
+                    },
+                    "COMMAND_NAME_MARKER": "print",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 150,
+                        "width": 450
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 3
+                }
+            },
+            "outbound_edges": [],
+            "inbound_edges": [
+                {
+                    "id": "9bc2a33b-cbd0-11ec-8205-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc2911c-cbd0-11ec-8204-000000000000"
+                },
+                {
+                    "id": "9bc643d6-cbd0-11ec-821d-000000000000",
+                    "from": "9bbd46af-cbd0-11ec-81ea-000000000000",
+                    "to": "9bc2911c-cbd0-11ec-8204-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc2b401-cbd0-11ec-8206-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82ef9112-cbce-11ec-80e3-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "custom",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "NftCreators": [
+                                    {
+                                        "address": "pubkey",
+                                        "share": 100,
+                                        "verified": null
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 500,
+                        "width": 400
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"NftCreators\": [\n   {\n    \"address\": \"pubkey\",\n    \"share\": 100\n   }\n  ]\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bca5b7a-cbd0-11ec-8239-000000000000",
+                    "from": "9bc2b401-cbd0-11ec-8206-000000000000",
+                    "to": "9bbcb55e-cbd0-11ec-81e4-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc2ca77-cbd0-11ec-8207-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc2b401-cbd0-11ec-8206-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc300cf-cbd0-11ec-8208-000000000000",
+            "properties": {
+                "kind": "Solana(\n    Nft(\n        SignMetadata,\n    ),\n)",
+                "name": "sign_metadata",
+                "original_node_id": "82f0663e-cbce-11ec-80e7-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "Nft": {
+                                "SignMetadata": {
+                                    "creator": null,
+                                    "fee_payer": null,
+                                    "mint_account": null
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "sign_metadata",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 230,
+                        "width": 300
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "can't receive input, quitting"
+                    ]
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bca6e72-cbd0-11ec-823a-000000000000",
+                    "from": "9bc300cf-cbd0-11ec-8208-000000000000",
+                    "to": "9bbc5f74-cbd0-11ec-81e0-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc31f7e-cbd0-11ec-8209-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc3f7d2-cbd0-11ec-8210-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc436cb-cbd0-11ec-8211-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                },
+                {
+                    "id": "9bc44e8d-cbd0-11ec-8212-000000000000",
+                    "from": "9bb9b29a-cbd0-11ec-81d6-000000000000",
+                    "to": "9bc300cf-cbd0-11ec-8208-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc352e1-cbd0-11ec-820a-000000000000",
+            "properties": {
+                "__print_output": "nft_creators&&&[NftCreator { address: WrappedPubkey(\"7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS\"), verified: None, share: 100 }]",
+                "inputs": {
+                    "print": {
+                        "NftCreators": [
+                            {
+                                "address": "7W3KHiYzPZjy2Be4NyZQi1PDQE152MXrBbivYKGLsmrS",
+                                "share": 100,
+                                "verified": null
+                            }
+                        ]
+                    }
+                },
+                "kind": "Simple(\n    Print,\n)",
+                "name": "print",
+                "original_node_id": "82f14095-cbce-11ec-80eb-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Simple": "Print"
+                    },
+                    "COMMAND_NAME_MARKER": "print",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 150,
+                        "width": 450
+                    },
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Success": 5
+                }
+            },
+            "outbound_edges": [],
+            "inbound_edges": [
+                {
+                    "id": "9bc36298-cbd0-11ec-820b-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc352e1-cbd0-11ec-820a-000000000000"
+                },
+                {
+                    "id": "9bc5aa9e-cbd0-11ec-821a-000000000000",
+                    "from": "9bbcb55e-cbd0-11ec-81e4-000000000000",
+                    "to": "9bc352e1-cbd0-11ec-820a-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc37ac1-cbd0-11ec-820c-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Simple(\n    Const,\n)",
+                "name": "const",
+                "original_node_id": "82f26ce7-cbce-11ec-80ef-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "file_picker",
+                    "COMMAND_MARKER": {
+                        "Simple": {
+                            "Const": {
+                                "String": "/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png"
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "const",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 300,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": "{\n \"Const\": {\n  \"String\": \"/Volumes/Macintosh HD/Users/amir/Documents/logo-full-small.png\"\n }\n}"
+                },
+                "state": {
+                    "Success": 0
+                }
+            },
+            "outbound_edges": [
+                {
+                    "id": "9bca7f96-cbd0-11ec-823b-000000000000",
+                    "from": "9bc37ac1-cbd0-11ec-820c-000000000000",
+                    "to": "9bbc0c3a-cbd0-11ec-81dc-000000000000"
+                },
+                {
+                    "id": "9bca90fa-cbd0-11ec-823c-000000000000",
+                    "from": "9bc37ac1-cbd0-11ec-820c-000000000000",
+                    "to": "9bbc39e3-cbd0-11ec-81de-000000000000"
+                }
+            ],
+            "inbound_edges": [
+                {
+                    "id": "9bc38989-cbd0-11ec-820d-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc37ac1-cbd0-11ec-820c-000000000000"
+                }
+            ]
+        },
+        {
+            "node_id": "9bc3ada9-cbd0-11ec-820e-000000000000",
+            "properties": {
+                "inputs": {
+                    "STARTER_INPUT_MARKER": "Empty"
+                },
+                "kind": "Solana(\n    Nft(\n        ApproveCollectionAuthority,\n    ),\n)",
+                "name": "approve_collection_authority",
+                "original_node_id": "f3d947df-cbcf-11ec-81bb-000000000000",
+                "original_props": {
+                    "ADDITIONAL_DATA_MARKER": "",
+                    "COMMAND_MARKER": {
+                        "Solana": {
+                            "Nft": {
+                                "ApproveCollectionAuthority": {
+                                    "fee_payer": null,
+                                    "mint_account": null,
+                                    "new_collection_authority": null,
+                                    "update_authority": null
+                                }
+                            }
+                        }
+                    },
+                    "COMMAND_NAME_MARKER": "approve_collection_authority",
+                    "COORDS_MARKER": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "DIMENSIONS_MARKER": {
+                        "height": 280,
+                        "width": 300
+                    },
+                    "START_NODE_MARKER": true,
+                    "TEXT_MARKER": ""
+                },
+                "state": {
+                    "Failed": [
+                        0,
+                        "failed to run command: ArgumentNotFound(\n    \"new_collection_authority\",\n)"
+                    ]
+                }
+            },
+            "outbound_edges": [],
+            "inbound_edges": [
+                {
+                    "id": "9bc3c912-cbd0-11ec-820f-000000000000",
+                    "from": "9bb6aed0-cbd0-11ec-81d4-000000000000",
+                    "to": "9bc3ada9-cbd0-11ec-820e-000000000000"
+                }
+            ]
+        }
+    ],
+    "edges": {
+        "9bc2ca77-cbd0-11ec-8207-000000000000": {},
+        "9bc56f38-cbd0-11ec-8219-000000000000": {},
+        "9bc5f1b9-cbd0-11ec-821c-000000000000": {},
+        "9bc8aa0c-cbd0-11ec-8229-000000000000": {},
+        "9bc7996a-cbd0-11ec-8222-000000000000": {},
+        "9bc88675-cbd0-11ec-8227-000000000000": {},
+        "9bbccece-cbd0-11ec-81e5-000000000000": {},
+        "9bc9a959-cbd0-11ec-8232-000000000000": {},
+        "9bbc6fb0-cbd0-11ec-81e1-000000000000": {},
+        "9bc36298-cbd0-11ec-820b-000000000000": {},
+        "9bc9243f-cbd0-11ec-822d-000000000000": {},
+        "9bc5287b-cbd0-11ec-8218-000000000000": {},
+        "9bc00426-cbd0-11ec-81f7-000000000000": {},
+        "9bc8700a-cbd0-11ec-8226-000000000000": {},
+        "9bb9d3a1-cbd0-11ec-81d7-000000000000": {},
+        "9bc6f4c8-cbd0-11ec-8221-000000000000": {},
+        "9bc9bc2e-cbd0-11ec-8233-000000000000": {},
+        "9bbe2165-cbd0-11ec-81ef-000000000000": {},
+        "9bc9dd4c-cbd0-11ec-8234-000000000000": {},
+        "9bc9547e-cbd0-11ec-822f-000000000000": {},
+        "9bca14e4-cbd0-11ec-8236-000000000000": {},
+        "9bc31f7e-cbd0-11ec-8209-000000000000": {},
+        "9bbc4a79-cbd0-11ec-81df-000000000000": {},
+        "9bc8dddc-cbd0-11ec-822b-000000000000": {},
+        "9bc6d2ab-cbd0-11ec-8220-000000000000": {},
+        "9bc7e98b-cbd0-11ec-8223-000000000000": {},
+        "9bbd563b-cbd0-11ec-81eb-000000000000": {},
+        "9bbbc7a1-cbd0-11ec-81db-000000000000": {},
+        "9bbcf4ea-cbd0-11ec-81e7-000000000000": {},
+        "9bc3f7d2-cbd0-11ec-8210-000000000000": {},
+        "9bca5b7a-cbd0-11ec-8239-000000000000": {},
+        "9bc83f73-cbd0-11ec-8225-000000000000": {},
+        "9bc99746-cbd0-11ec-8231-000000000000": {},
+        "9bbd1c32-cbd0-11ec-81e9-000000000000": {},
+        "9bca3632-cbd0-11ec-8237-000000000000": {},
+        "9bbf6232-cbd0-11ec-81f3-000000000000": {},
+        "9bc46beb-cbd0-11ec-8213-000000000000": {},
+        "9bc436cb-cbd0-11ec-8211-000000000000": {},
+        "9bc44e8d-cbd0-11ec-8212-000000000000": {},
+        "9bbfc988-cbd0-11ec-81f5-000000000000": {},
+        "9bc1bd18-cbd0-11ec-81ff-000000000000": {},
+        "9bca0449-cbd0-11ec-8235-000000000000": {},
+        "9bc4e2f8-cbd0-11ec-8217-000000000000": {},
+        "9bca6e72-cbd0-11ec-823a-000000000000": {},
+        "9bc93c55-cbd0-11ec-822e-000000000000": {},
+        "9bc6b72e-cbd0-11ec-821f-000000000000": {},
+        "9bc2a33b-cbd0-11ec-8205-000000000000": {},
+        "9bc5c5da-cbd0-11ec-821b-000000000000": {},
+        "9bc643d6-cbd0-11ec-821d-000000000000": {},
+        "9bbd9184-cbd0-11ec-81ed-000000000000": {},
+        "9bc4bbea-cbd0-11ec-8216-000000000000": {},
+        "9bc213b0-cbd0-11ec-8201-000000000000": {},
+        "9bc38989-cbd0-11ec-820d-000000000000": {},
+        "9bc5aa9e-cbd0-11ec-821a-000000000000": {},
+        "9bc062f0-cbd0-11ec-81f9-000000000000": {},
+        "9bca48b4-cbd0-11ec-8238-000000000000": {},
+        "9bc80447-cbd0-11ec-8224-000000000000": {},
+        "9bba3131-cbd0-11ec-81d9-000000000000": {},
+        "9bc69612-cbd0-11ec-821e-000000000000": {},
+        "9bbc9d78-cbd0-11ec-81e3-000000000000": {},
+        "9bc8bbb7-cbd0-11ec-822a-000000000000": {},
+        "9bc26f02-cbd0-11ec-8203-000000000000": {},
+        "9bc0b2d6-cbd0-11ec-81fd-000000000000": {},
+        "9bc0904d-cbd0-11ec-81fb-000000000000": {},
+        "9bc96c09-cbd0-11ec-8230-000000000000": {},
+        "9bca90fa-cbd0-11ec-823c-000000000000": {},
+        "9bbec809-cbd0-11ec-81f1-000000000000": {},
+        "9bc49fdc-cbd0-11ec-8215-000000000000": {},
+        "9bc4857a-cbd0-11ec-8214-000000000000": {},
+        "9bc3c912-cbd0-11ec-820f-000000000000": {},
+        "9bc8989e-cbd0-11ec-8228-000000000000": {},
+        "9bca7f96-cbd0-11ec-823b-000000000000": {},
+        "9bbc1bb9-cbd0-11ec-81dd-000000000000": {},
+        "9bc90ec8-cbd0-11ec-822c-000000000000": {}
+    },
+    "state_id": 0
+}

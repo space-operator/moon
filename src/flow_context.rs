@@ -37,6 +37,13 @@ enum Cmd {
     Stop,
 }
 
+// UI rendering Flutter  -> Javascript
+// Input/
+// Backend -> Rust
+// Trigger flows via API
+
+// connect nodes with edges
+
 impl FlowContext {
     pub fn new(
         db: Arc<dyn Datastore>,
@@ -53,7 +60,7 @@ impl FlowContext {
         let run_id_mod = run_id.clone();
 
         std::thread::spawn(move || {
-            let threaded_rt = tokio::runtime::Builder::new_multi_thread()
+            let threaded_rt = tokio::runtime::Builder::new_multi_thread() //TODO: fix limits for worker_threads
                 .enable_all()
                 .build()
                 .unwrap();
@@ -82,7 +89,13 @@ impl FlowContext {
 
                     let mut changed = false;
 
-                   let graph_name = flow_node.properties.get("name").unwrap().as_str().unwrap().to_owned();
+                    let graph_name = flow_node
+                        .properties
+                        .get("name")
+                        .unwrap()
+                        .as_str()
+                        .unwrap()
+                        .to_owned();
 
                     for edge in flow_node.outbound_edges {
                         let props = db.read_edge_properties(edge).await.unwrap();
